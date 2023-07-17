@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RainAnimationSwiftUI: View {
+struct VDSRainAnimationSwiftUI: View {
     var rows = 10
     var textContent = Array("abcdefghijklmnopqrstuvwxyz").map({ String($0) }).shuffled()
     var randomAnimDuration = 3.0...3.5
@@ -46,7 +46,7 @@ struct RainAnimationSwiftUI: View {
 
 struct ContentView: View {
     var body: some View {
-        RainAnimationSwiftUI()
+        VDSRainAnimationSwiftUI()
             .ignoresSafeArea()
     }
 }
